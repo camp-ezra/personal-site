@@ -1,0 +1,73 @@
+/* box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/*color*/
+body {background-color:#88B37E;}
+
+/*divs*/
+header {
+font-color: #FFC857;}
+
+/*text*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat&display=swap');
+
+h1 {font-family: 'Bitter', serif;
+  font-size: 40px;
+color: #4B3F72;
+text-align: center;}
+
+h2{font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+color: #19647E;
+text-align: left;}
+
+h3{font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+color: #19647E;
+text-align: left;}
+
+p {font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+color: #1F2041;}
+
+li {font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+color: #1F2041;}
+
+/*link colors*/
+a:link{color: #19647E;}
+a:visited{color: #4B3F72;}
+a:hover{color: #FFC857;}
+a:active{color: #119DA4;}
+
+/*div text*/
+header h1 {margin: 0;
+  font-size:52px;
+  text-align: center;
+  padding: 40px 10px 10px 20px;}
+
+footer p{font-family: 'Bitter', serif;
+font-size: 15px;
+color: #FFC857;
+padding: 20px 5px 5px 10px;
+}
+
+/*classes*/
+.center {display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;}
+
+.wrapper {width: auto;
+padding: 20px;
+border: 5px solid #FFC857;
+margin: 30px auto;
+border-radius: 15px;}
+
+/*misc*/
+hr{height: 6px;
+background-color: #FFC857;
+margin-top: 6px;
+margin-bottom: 6px;}
