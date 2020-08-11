@@ -10,10 +10,6 @@ body {background-color:#88B37E;}
 header {
 font-color: #FFC857;}
 
-/*image formatting*/
-img{height: 200px;
-width: auto;}
-
 /*text*/
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat&display=swap');
 
@@ -62,7 +58,7 @@ padding: 20px 5px 5px 10px;
 .center {display: block;
 margin-left: auto;
 margin-right: auto;
-width: 50%;
+width: 30%;
 height: auto;}
 
 .wrapper {width: auto;
