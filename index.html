@@ -1,110 +1,143 @@
-<!-- this goes at the beginning of every HTML document -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<!-- The head contains information like the title of the website and links to the CSS stylesheet(s) used by the website -->
 <head>
   <meta charset="utf-8">
-  <title>Ezra's Brain Trust</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ezra's Domain</title>
+  <!-- Normalize CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+  <!-- Custom Stylesheet -->
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<!-- This indicates the body of the website, with the text and images you see on the webpage, begins -->
 <body>
 
-<!-- header - top of page heading -->
-<!-- header class - wrapper is stylized class in the CSS document -->
-  <header class = "wrapper">
-<!-- h1, h2, h3, and p are text tags used in this document, with different styling in the CSS document, and different levels of significance to SEO and screen readers -->
+<!-- Put Nav bar for different sections of the page here -->
+  <header>
     <h1>Ezra Campbell</h1>
+    <nav class ="nav">
+      <div class="item">
+        <a href="#summary">Summary</a> <!-- intro & about me--> 
+        </div>
+        <div class="item">
+        <a href="#feats">Feats</a> <!--portfolio-->
+      </div>
+      <div class="item">
+        <a href="#summon">Summon Me</a> <!--contact/email form and links-->
+    </div>
+    </nav>
   </header>
 
-<!-- main indicates the main portion of the body of the web page -->
-  <main>
-    <!-- sourcing image from the images file which is hosted in this Github repo -->
-    <!-- alt gives text that will appear if the image doesn't load or be read if someone is using a screenreader -->
-    <img src="images/ezra-avatar.png" alt="Photo of Ezra in black and white with short hair, glasses, and a tie" title="Ezra" class = "center"/>
-
-<!-- p tags set off paragraphs -->
-<!-- em for emphasis and strong put text in italics and bold, respectively, but also indicate importance to search engines -->
-<!-- i for italics and b for bold simply change text appearance without added significance for SEO -->
-    <p><i>Freelance</i> <em>transcriptionist</em> and <strong>web developer</strong> <b>in training</b>.</p>
-    <p>I am a 27-year-old human currently residing in Athens, Georgia.</p>
-
-<!-- displays a line that is styled a certain way in CSS - HR meaning horizontal rule - separates web page visually -->
-    <hr>
-
-<!-- div can be used to separate parts of body of a web page into sections -->
-    <div>
-      <h2>About Me</h2>
-        <p>
-          I have a BA in English literature from Tulane University, and I have done transcription work and video captioning since graduating in 2015.
-          I feel ready to move on to something that exercises more of my analyzing abilities, and something that I find more
-          creative. I utilize research and problem-solving skills in my transcription, and I always persevere when faced with a problem, so I am confident that my skills
-          will transfer well to web development. I am also eager to do work that is more collaborative, as opposed to the solitary nature of most
-          transcription work.
-        </p>
-      </div>
-      <div>
-        <h3>More About Me</h3>
-          <p>
-            I love to travel when I get the opportunity. Here are some places I've been.</p>
-
-<!-- ol means ordered list. ordered with numbers -->
-            <ol>
-<!-- li - list item, designates each point on the list -->
-            <li>Switzerland
-              </li>
-              <li>
-                Quebec and Montreal, Canada
-              </li>
-              <li>the highlands and part of the Amazon in Ecuador</li>
-          </ol>
-        </div>
-        <div>
-            <h3>Other Hobbies</h3>
-
-<!-- ul means unordered list, separated into bullet points -->
-            <ul>
-          <li>Watching movies</li>
-          <li>Analyzing music and music videos</li>
-          <li>Writing poetry</li>
-          <li>Reading: especially sci-fi, fantasy, graphic novels, and collections of essays</li>
-        </ul>
-      </div>
-
-    <hr>
-
-    <div>
-      <h3>Contact Me</h3>
-      <ul>
-        <li>
-
-          <!-- link to an e-mail address that brings up one's default e-mail program with a new message with To field filled out with given e-mail address -->
-          <a href="mailto:ezra_campbell_93@yahoo.com">E-mail</a>
-        </li>
-        <li>
-          <!-- below are two links to web pages that are set to automatically open in a new browser tab -->
-          <a href="https://www.linkedin.com/in/ezra-campbell-1403ba69/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/camp-ezra" target="_blank">GitHub</a> </li>
-      </ul>
+    <main>
+<div class="container">
+        <article id="summary">
+          <div class="group">
+          <div class="item">
+            <img src="images/ezra-avatar.jpg" alt="Photo of Ezra in black and white with short hair, glasses, and a tie" title="Ezra" class = "main-img"/>
+            </div>
+            <div class="item-double">
+    <p>I am a 27-year-old human currently residing in Athens, Georgia.
+    I live in a basement (apartment) with my girlfriend, roommate, and three rats (on purpose!).
+    I was a transcriptionist and video captioner in my past life, and a web engineering student with Thinkful in my current life.</p>
     </div>
+      <div class="item">
+              <h2>Attributes</h2>
+              <ul>
+              <li>Travel, road trips</li>
+                <li>Analyzing music and music videos</li>
+                <li>(Over)analyzing movies</li>
+                <li>Writing poetry</li>
+                <li>Reading: especially sci-fi, fantasy, graphic novels, and collections of essays</li>
+              </ul>
+            </div>
+    </div>
+    </article>
+    </div>
+
+
+    <hr>
+
+<!--link from nav bar FEATS (portfolio) - 4 items-->
+ 
+  <article class="container" id="feats">
+  <h2>Feats</h2>
+  <div class='group'>
+    <div class='item'>
+      <img src="images/placeholder.png" alt="placeholder screenshot" class="rounded">
+      <h3>Sample Project</h3>
+      <p>This is a description of the project I worked on.</p>
+    </div>
+    <div class='item'>
+      <img src="images/placeholder.png" alt="placeholder screenshot" class="rounded">
+      <h3>Sample Project</h3>
+      <p>This is a description of the project I worked on.</p>
+    </div>
+  </div>
+  <div class='group'>
+    <div class='item'>
+      <img src="images/placeholder.png" alt="placeholder screenshot" class="rounded">
+      <h3>Sample Project</h3>
+      <p>This is a description of the project I worked on.</p>
+    </div>
+    <div class='item'>
+      <img src="images/placeholder.png" alt="placeholder screenshot" class="rounded">
+      <h3>Sample Project</h3>
+      <p>This is a description of the project I worked on.</p>
+    </div>
+  </div>
+</article>
+<hr>
+
+<!--section 4 link from nav bar Summon me (contact form)-->
+
+      <article class = "container" id="summon">
+            <div class="group">
+                <div class="item">
+    <form action="https://formspree.io/f/mzbkerdw" method="POST">
+        <fieldset>
+            <legend>
+                <h3>Summon Me</h3>
+            </legend>
+            <div>
+        <label for ="name">Name:</label>
+        <input id="name" type="text" name="name"
+        autofocus="on" required /><br>
+        <label for ="email">Email:</label>
+        <input id="email" type ="email" name="_replyto"
+        required /><br>
+        <label for="form-message">Your message:</label>
+        <textarea id="form-message" name="message" required maxlength="1000"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    </div>
+</div>
+</article>
+
   </main>
 
     <hr>
 
-<!-- footer is section of web page at the bottom that often has information like copyright or other things that need to go at the end and show up on every page -->
-    <footer>
-      <p>
-        &#169; Ezra Campbell 2020
+      <div class="container">
+      <div class="footer">
+        <!-- Links-->
+        <div class="group">
+          <div class="item">
+        <a href="https://www.linkedin.com/in/ezra-campbell-1403ba69/" target="_blank">LinkedIn</a></div>
+        <div class="item">
+        <a href="https://github.com/camp-ezra" target="_blank">GitHub</a> </div>
+        <div class="item">
+        <a href="mailto:ezra_campbell_93@yahoo.com">Email</a></div>
+        </div>
+      <div class = "item">
+       <p>&#169; Ezra Campbell 2020
       </p>
-<p><a href="https://coolors.co/1f2041-4b3f72-ffc857-88b37e-119da4-19647e">Color palette</a> generated by <a href="https://coolors.co">Coolors</a>
+    </div>
+      </div>
+    </div>
     </footer>
 
 </body>
 
-<!-- designates end of the html document -->
 </html>

@@ -1,76 +1,107 @@
-/* box sizing */
 * {
   box-sizing: border-box;
-}
+} 
 
-/*color*/
-body {background-color:#88B37E;}
-
-/*divs*/
-header {
-font-color: #FFC857;}
-
-/*text*/
-
-/*this link imports fonts that are accessed from a specific webpage*/
+/*imports fonts that are accessed from a specific webpage*/
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat&display=swap');
 
+body {font-family: 'Montserrat', sans-serif;
+  background-color:#88B37E;
+font-size: 25px;}
+
 h1 {font-family: 'Bitter', serif;
-  font-size: 40px;
 color: #4B3F72;
+margin: 0 0 30px 10px;
+font-size: 40px;}
+
+h2 {
+color: #19647E;
+font-size: 35px;
 text-align: center;}
 
-h2{font-family: 'Montserrat', sans-serif;
-  font-size: 35px;
+h3 {
 color: #19647E;
-text-align: left;}
+font-size: 30px;}
 
-h3{font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-color: #19647E;
-text-align: left;}
+      /*link colors*/
+      a:link {color: #19647E;
+        text-decoration: none;}
+      a:visited{color: #4B3F72;
+        text-decoration: none;}
+      a:hover{color: #FFC857;
+        text-decoration: none;}
+      a:active{color: #119DA4;
+        text-decoration: none;}
 
-p {font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-color: #1F2041;}
 
-li {font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-color: #1F2041;}
+        hr{height: 6px;
+          background-color: #FFC857;
+          margin-top: 6px;
+          margin-bottom: 6px;}
+    
+header {
+  background-color: #FFC857;
+padding: 20px 0;}
 
-/*link colors*/
-a:link{color: #19647E;}
-a:visited{color: #4B3F72;}
-a:hover{color: #FFC857;}
-a:active{color: #119DA4;}
-
-/*div text*/
 header h1 {margin: 0;
   font-size:52px;
-  text-align: center;
-  padding: 40px 10px 10px 20px;}
+  padding: 10px 10px 10px 10px;}
 
-footer p{font-family: 'Bitter', serif;
-font-size: 15px;
-color: #FFC857;
-padding: 20px 5px 5px 10px;
+  article {
+    display: block;
+  }
+
+.container {width: 100%;
+display: flex;}
+
+
+.group {display: flex;
+flex-direction: column;}
+
+.nav {display: flex;
+flex-direction: column;
 }
 
-/*classes*/
-.center {display: block;
-margin-left: auto;
-margin-right: auto;
-width: 30%;
-height: auto;}
+.item {
+  flex: 1;
+  margin: 10px;}
 
-.wrapper {width: auto;
-padding: 20px;
-border: 5px solid #FFC857;
-margin: 30px auto;
-border-radius: 15px;}
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
 
-/*misc*/
-hr{height: 6px;
-background-color: #FFC857;
-margin-top: 6px;
-margin-bottom: 6px;}
+  
+/*Media Query*/
+
+@media all and (min-width: 800px) {
+  .container {
+    width: 80%;
+    margin: 10px 0px 10px 10px;
+    flex-direction: row;
+  }
+  
+  .group {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav {
+    flex-direction: row; 
+    justify-content: space-evenly;
+  }
+
+
+}
+
+#summary, #feats, #summon {
+  margin-bottom: 100px;
+}
+
+
+
+  footer p{font-family: 'Bitter', serif;
+    font-size: 20px;
+    color: #FFC857;
+    padding: 10px 10px 10px 10px;
+  }
